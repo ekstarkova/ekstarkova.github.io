@@ -461,7 +461,7 @@
           content="https://meconnect.ru/uploads/avatars/thumbs/dffeda7f802e56b55f6bdb246ed5cb4c.jpg" />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://meconnect.ru/ekstarkova" />
-    <meta property="og:description" content="Привет!&nbsp;🕊Я Катя, психолог-студент и обучающийся КПТ-терапевтОбразование и опыт•&nbsp;&nbsp;Высшее образование:&nbsp;Учусь на 4 курсе кафедры психологии личности&nbsp;в Российском государственном гуманитарном университете в Москве•&nbsp;Дополнительное образование:&nbsp;Прохожу длительное обучение методу психотерапии при Ассоциации когнитивно-поведенческой психотерапии (АКПП)•&nbsp;Провела 100+ консультаций• Прохожу личную терапию 2 года• Посещаю интервизии и супервизии С чем вы можете ко мне обратиться?&nbsp;- неуверенность в себе&nbsp;- неадекватная самооценка- непринятие себя и самокритика- непонимание себя и своих желаний- страхи, тревожное состояние- прокрастинация- отношения с другими людьми&nbsp;НЕ РАБОТАЮ:&nbsp;- с людьми младше 18 лет- людьми, имеющими психиатрический диагноз&nbsp;- семейными парами&nbsp;а также такими запросами, как&nbsp;- суицидальные мысли и намерения&nbsp;- навязчивые мысли&nbsp;- самоповреждающее поведение- зависимости- травмы насилия- переживание утраты и гореСтоимость и формат работы&nbsp;📍Стоимость и длительность одной консультации 1500 рублей/60 минут&nbsp;📍&nbsp;Работаю&nbsp;ОНЛАЙН (Skype, Zoom)Если вы чувствуете доверие ко мне, добро пожаловать на консультацию&nbsp;❤️Записаться на консультацию&nbsp;&nbsp;⬇️ До скорой встречи! ">
+    <meta property="og:description" content="Привет!&nbsp;🕊Я Катя, психолог-студент и обучающийся КПТ-терапевтОбразование и опыт•&nbsp;&nbsp;Высшее образование:&nbsp;Учусь на 4 курсе кафедры психологии личности&nbsp;в Российском государственном гуманитарном университете в Москве•&nbsp;Дополнительное образование:&nbsp;Прохожу длительное обучение методу психотерапии при Ассоциации когнитивно-поведенческой психотерапии (АКПП)•&nbsp;Провела 100+ консультаций• Прохожу личную терапию 2 года• Посещаю интервизии и супервизии С чем вы можете ко мне обратиться?&nbsp;- неуверенность в себе&nbsp;- неадекватная самооценка- непринятие себя и самокритика- непонимание себя и своих желаний- страхи, тревожное состояние- прокрастинация- отношения с другими людьми&nbsp;НЕ РАБОТАЮ:&nbsp;- с людьми младше 18 лет- людьми, имеющими психиатрический диагноз&nbsp;- семейными парами&nbsp;а также такими запросами, как&nbsp;- суицидальные мысли и намерения&nbsp;- навязчивые мысли&nbsp;- самоповреждающее поведение- зависимости- травмы насилия- переживание утраты и гореСтоимость и формат работы&nbsp;📍Стоимость и длительность одной консультации 1500 рублей/55 минут&nbsp;📍&nbsp;Работаю&nbsp;ОНЛАЙН (Skype, Zoom)Если вы чувствуете доверие ко мне, добро пожаловать на консультацию&nbsp;❤️Записаться на консультацию&nbsp;&nbsp;⬇️ До скорой встречи! ">
     <meta property="ia:markup_url" content="https://meconnect.ru/ekstarkova">
 
 
@@ -479,114 +479,6 @@
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script async="" src="scripts/fontawesome-all.js"></script>
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-140861458-1');
-    </script>
-
-    <script type="text/javascript">
-        var key = 0;
-        $('#add_timer').on('click', function() {
-            $.ajax({
-                url: 'processing/process/profile_settings.php',
-                data: 'ajaxPost=true&action=add_timer&add_timer=true',
-                type: 'POST',
-                success: function(data) {
-                    key++;
-                    var template = `
-	<div class="timer_form" data-key="{{keyreplace}}">
-		<div class="flex mar15 min20">
-			<input type="hidden" name="timer[{{keyreplace}}][id]" value="{{idreplace}}">
-			<div class="main__settingNameAndInputBlock ">
-				<p class="main__settingInputName">Тип</p>
-				<div class="main__settingNameAndDeleteInput">
-					<select class="main__settinhDesignSelect w_100 timer_select" name="timer[{{keyreplace}}][type]" data-key="{{keyreplace}}">
-						<option value="1" selected="selected">До определенной даты</option>
-						<option value="2" >На промежуток времени</option>
-						<option value="3" >Каждый день</option>
-					</select>
-				</div>
-			</div>
-			<div class="main__settingNameAndInputBlock ">
-				<p class="main__settingInputName">Стиль</p>
-				<div class="main__settingNameAndDeleteInput">
-					<select class="main__settinhDesignSelect w_100" name="timer[{{keyreplace}}][style]">
-					<option value="default" selected="selected">Стандартная анимация</option><option value="circular" >круговая анимация</option><option value="digital" >цифровая анимация</option><option value="draft" >карточная анимация</option><option value="birthday" >анимация 5</option>
-					</select>
-				</div>
-			</div>
-			<div class="main__settingNameAndInputBlock timer_value" data-id="3" data-key="{{keyreplace}}" style="display:none;">
-				<p class="main__settingInputName">время</p>
-				<input type="time" class="speed w_100" name="timer[{{keyreplace}}][value][time]" value="17:39:17" >
-			</div>
-			<div class="main__settingNameAndInputBlock">
-			    <p class="main__settingInputName">текст</p>
-			    <input type="color" class="speed w_100" name="timer[{{keyreplace}}][color]" class="main__input main__settingInput form-control" value="#ffffff">
-			</div>
-			<div class="compensor main__settingNameAndDeleteInput" >
-				<button type="button" class="iconTrash deleteInputIcon delete_timer" data-key="{{keyreplace}}" data-id="{{idreplace}}"></button>
-			</div>
-		</div>
-		<div class="flex start mar15 min20">
-			<div class="main__settingNameAndInputBlock timer_value" data-id="1" data-key="{{keyreplace}}" >
-				<p class="main__settingInputName">дата и время</p>
-				<input type="datetime-local" class="speed w_100" name="timer[{{keyreplace}}][value][datetime]" value="2022-02-14T16:39">
-			</div>
-			<div class="main__settingNameAndInputBlock micro_width timer_value" data-id="2" data-key="{{keyreplace}}" style="display:none;">
-				<p class="main__settingInputName">дни</p>
-				<input type="number" class="speed w_100" name="timer[{{keyreplace}}][value][day]" value="0" min="0">
-			</div>
-			<div class="main__settingNameAndInputBlock micro_width timer_value" data-id="2" data-key="{{keyreplace}}" style="display:none;">
-				<p class="main__settingInputName">часы</p>
-				<input type="number" class="speed w_100" name="timer[{{keyreplace}}][value][hour]" value="1" min="0" max="24">
-			</div>
-			<div class="main__settingNameAndInputBlock micro_width timer_value" data-id="2" data-key="{{keyreplace}}" style="display:none;">
-				<p class="main__settingInputName">минуты</p>
-				<input type="number" class="speed w_100" name="timer[{{keyreplace}}][value][minut]" value="0" min="0" max="60">
-			</div>
-		</div>
-	</div>`;
-                    $.ajax({});
-                    template = template.replace(/{{keyreplace}}/g, key);
-                    template = template.replace(/{{idreplace}}/g, data);
-                    $('.timer_list').append(template);
-                    timer_on();
-                },
-            });
-        });
-
-        function timer_on() {
-            $('.timer_select').off('change');
-            $('.timer_select').on('change', function(e) {
-                var key = $(this).attr('data-key');
-                var id = $(this).val();
-                $('.timer_value[data-key="' + key + '"]').hide();
-                $('.timer_value[data-key="' + key + '"][data-id="' + id + '"]').show();
-            });
-            $('.delete_timer').on('click', function() {
-                var key = $(this).attr('data-key');
-                var id = $(this).attr('data-id');
-                $('.timer_form[data-key="' + key + '"]').remove();
-                $.ajax({
-                    url: 'processing/process/profile_settings.php',
-                    data: 'ajaxPost=true&action=del_timer&del_timer=' + id,
-                    type: 'POST',
-                    success: function(data) {
-
-                    }
-                });
-            });
-        }
-        timer_on();
-    </script>
-    <script></script>
-    <style></style>
     <link rel="stylesheet" href="styles/new2.css">
     <style>
         .swiper-container {
@@ -663,18 +555,31 @@
                 <p></p>
                 <hr>
                 <p></p>
-                <p><span style="background-color: rgb(198, 217, 240);"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong style=""><span style="font-size: medium;">Образование и опыт</span></strong></span></span></p>
-                <p><span style="background-color: rgb(198, 217, 240);"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong style=""><span style="font-size: medium;"><br></span></strong></span></span></p>
-                <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 17.712px;">•&nbsp;</span><strong style="font-family: Tahoma, Geneva, sans-serif;">Высшее образование:&nbsp;</strong></p>
+                <p><span><span style="font-family: Tahoma, Geneva, sans-serif;"><strong style=""><span style="font-size: medium;">Образование </span></strong></span></span></p>
+                <!---<p><span style="background-color: rgb(198, 217, 240);"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong style=""><span style="font-size: medium;"><br></span></strong></span></span></p> ПРОБЕЛ--->
+                <!---<p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: medium;">•&nbsp;</span><strong style="font-family: Tahoma, Geneva, sans-serif;">Высшее образование:&nbsp;</strong></p>
+                <div>
                 <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">Учусь на 4 курсе кафедры психологии личности&nbsp;</span></span></p>
                 <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">в Российском государственном гуманитарном университете в Москве</span></span></p>
-                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
-                <p><span style="background-color: rgb(250, 250, 250); color: rgb(38, 38, 38); font-family: Tahoma, Geneva, sans-serif; font-size: 17.712px; caret-color: rgb(38, 38, 38);">•&nbsp;</span><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><strong>Дополнительное образование:&nbsp;</strong></span></span></p>
-                <p><span style="font-size: medium; font-family: Tahoma, Geneva, sans-serif;">Прохожу длительное обучение методу психотерапии при Ассоциации когнитивно-поведенческой психотерапии (АКПП)</span></p>
+                </div>
+                --->
+                <div style="padding-left: 0.5em;">
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Факультет психологии РГГУ (2018-2022)</span></span></p>
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Обучаюсь при Ассоциации когнитивно-поведенческой психотерапии</span></span></p>
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Чистые когниции "Техники и идеи схема-терапии в работе с трудными клиентскими случаями"</span></span></p>
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Школа "Психология По-Человечески"</span></span></p>
+                </div>
+                <!---<p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>--->
+                <!---<p><span style="background-color: rgb(250, 250, 250); color: rgb(38, 38, 38); font-family: Tahoma, Geneva, sans-serif; font-size: 17.712px; caret-color: rgb(38, 38, 38);">•&nbsp;</span><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><strong>Дополнительное образование:&nbsp;</strong></span></span></p>
+                <p><span style="font-size: medium; font-family: Tahoma, Geneva, sans-serif;">Прохожу длительное обучение методу психотерапии при Ассоциации когнитивно-поведенческой психотерапии (АКПП)</span></p>--->
                 <p><span style="font-size: medium; font-family: Tahoma, Geneva, sans-serif;"><br></span></p>
+                <p><span><span style="font-family: Tahoma, Geneva, sans-serif;"><strong style=""><span style="font-size: medium;">Опыт </span></strong></span></span></p>
+                <div style="padding-left: 0.5em;">
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Частная практика с 2020 г.</span></span></p>
                 <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">•&nbsp;Провела 100+ консультаций</span></span></p>
-                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Прохожу личную терапию 2 года</span></span></p>
-                <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: medium;">• Посещаю интервизии и супервизии</span><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
+                <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Прохожу личную терапию 2.5 года</span></span></p>
+                <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: medium;">• Регулярно посещаю интервизии и супервизии</span><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
+                </div>
                 <p><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
             </div>
 
@@ -684,34 +589,27 @@
                 <p></p>
                 <hr>
                 <p></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><strong style="font-family: Tahoma, Geneva, sans-serif;"><span style="background-color: rgb(198, 217, 240);"><span style="font-size: medium;">С чем вы можете ко мне обратиться?&nbsp;</span></span></strong></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="background-color: rgb(219, 229, 241);"><span style="" pt="" sans",="" sans;"=""><span style="font-size: medium;"><br></span></span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- неуверенность в себе&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- неадекватная самооценка</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- непринятие себя и самокритика</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- непонимание себя и своих желаний</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- страхи, тревожное состояние</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- прокрастинация</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- отношения с другими людьми&nbsp;</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><strong style="font-family: Tahoma, Geneva, sans-serif;"><span><span style="font-size: medium;">С чем вы можете ко мне обратиться&nbsp;</span></span></strong></p>
+                <div style="padding-left: 0.5em;">
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Неадекватная самооценка и неуверенность в себе&nbsp;</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Непринятие себя и самокритика</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Непонимание себя и своих желаний</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Тревога и страхи</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Прокрастинация</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• Проблемы в отношениях с другими людьми&nbsp;</span></span></p>
                 <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="background-color: rgb(198, 217, 240); font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><strong style="">НЕ РАБОТАЮ</strong>:&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- с людьми младше 18 лет</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">- людьми, имеющими психиатричес</span><span style="font-family: Tahoma, Geneva, sans-serif;">кий диагноз&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- семейными парами&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">а также такими запросами, как&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- суицидальные мысли и намерения&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- навязчивые мысли&nbsp;</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">- самоповреждающее поведени</span><span style="font-family: Tahoma, Geneva, sans-serif;">е</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">- зависимости</span><br></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- травмы насилия</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">- переживание утраты и горе</span></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><br></span></span></p>
+                </div>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;"><strong style="">НЕ РАБОТАЮ</strong>:&nbsp;</span></span></p>
+                <div style="padding-left: 0.5em;">
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: medium;">• С людьми младше 18 лет и симейными парами</span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">• С суицидальными мыслями и намерениями, навязчивыми мыслями, зависимостями, травмами насилия и переживанием утраты</span><span style="font-family: Tahoma, Geneva, sans-serif;">&nbsp;</span></span></p>
                 <p></p>
+                </div>
                 <hr>
                 <p></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong><span style="background-color: rgb(198, 217, 240);"><span style="font-size: medium;">Стоимость и формат работы<span class="Apple-converted-space" style="">&nbsp;</span></span></span></strong></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong><span><span style="font-size: medium;">Стоимость и формат работы<span class="Apple-converted-space" style="">&nbsp;</span></span></span></strong></span></p>
                 <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-family: Tahoma, Geneva, sans-serif;"><strong><span class="Apple-converted-space"><span style="font-size: medium;"><br></span></span></strong></span></p>
-                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">📍</span><span style="font-family: Tahoma, Geneva, sans-serif;">Стоимость и длительность одной консультации <strong><em>1500 рублей/60 минут<span class="Apple-converted-space">&nbsp;</span></em></strong></span></span></p>
+                <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">📍</span><span style="font-family: Tahoma, Geneva, sans-serif;">Стоимость и длительность одной консультации <strong><em>1500 рублей/55 минут<span class="Apple-converted-space">&nbsp;</span></em></strong></span></span></p>
                 <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;">📍</span><span style="font-family: Tahoma, Geneva, sans-serif;">&nbsp;Работаю&nbsp;</span><strong style="font-family: Tahoma, Geneva, sans-serif;"><em>ОНЛАЙН</em></strong><span style="font-family: Tahoma, Geneva, sans-serif;"> (Skype, Zoom)</span></span></p>
                 <p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;"><span style="font-size: medium;"><span style="font-family: Tahoma, Geneva, sans-serif;"><br></span></span></p>
                 <p></p>
